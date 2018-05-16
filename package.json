@@ -1,0 +1,41 @@
+{
+  "name": "webpacks",
+  "version": "1.0.0",
+  "description": "study webpack",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "express": "^4.16.3",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash": "^4.17.10",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-middleware": "^3.1.3",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --open",
+    "server": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngeLeeGeek/webpacks.git"
+  },
+  "keywords": [
+    "webpack",
+    "vue",
+    "study"
+  ],
+  "author": "Ange",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngeLeeGeek/webpacks/issues"
+  },
+  "homepage": "https://github.com/AngeLeeGeek/webpacks#readme"
+}
