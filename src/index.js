@@ -3,44 +3,41 @@ import './assets/style.css'
 import print from './script/print'
 
 function component() {
-  var element = document.createElement('div');
-  var btn = document.createElement('button')
+  var element = document.createElement('div')
 
-  element.innerHTML = join(['Hello', 'webpack'], ' ');
+  element.innerHTML = join(['Hello', 'didi'], ' ')
   element.classList.add('red')
 
-  btn.onclick = print;
-
-  element.appendChild(btn)
-
-  return element;
+  return element
 }
 
-document.body.appendChild(component());
+document.body.appendChild(component())
 
+console.log('1')
 
-// JavaScript 执行机制demo
+setTimeout(function() {
+  console.log('2')
+  new Promise(function(resolve) {
+    console.log('3')
+    resolve()
+  }).then(function() {
+    console.log('4')
+  })
+})
 
-// console.log(1)
+new Promise(function(resolve) {
+  console.log('5')
+  resolve()
+}).then(function() {
+  console.log('6')
+})
 
-// setTimeout(() => {
-//   console.log(2)
-// }, 0)
-
-// console.log(3)
-
-// 
-setTimeout(function(){
-  console.log(1)
-});
-
-new Promise(function(resolve){
-  console.log(2)
-  for(var i = 0; i < 10000; i++){
-      i == 99 && resolve();
-  }
-}).then(function(){
-  console.log(3)
-});
-
-console.log(4)
+setTimeout(function() {
+  console.log('7')
+  new Promise(function(resolve) {
+    console.log('8')
+    resolve()
+  }).then(function() {
+    console.log('9')
+  })
+})
